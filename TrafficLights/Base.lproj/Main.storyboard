@@ -16,56 +16,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="dBI-ZB-yUD">
-                                <rect key="frame" x="146.66666666666666" y="207.66666666666663" width="100" height="462"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4u-k4-Ih2">
+                                <rect key="frame" x="122.66666666666669" y="711" width="148" height="49"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="148" id="4pI-mT-HhZ"/>
+                                    <constraint firstAttribute="height" constant="49" id="XgE-2d-avL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonDidTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="IIV-to-cjJ"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="dBI-ZB-yUD">
+                                <rect key="frame" x="146.66666666666666" y="117" width="100" height="380"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WFa-R4-EtQ">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="bJG-9t-skz"/>
-                                            <constraint firstAttribute="height" constant="100" id="hsl-4T-9VL"/>
+                                            <constraint firstAttribute="width" secondItem="WFa-R4-EtQ" secondAttribute="height" multiplier="1:1" id="scB-VC-W4a"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="77i-Qu-5ri">
-                                        <rect key="frame" x="0.0" y="140.00000000000003" width="100" height="100"/>
+                                        <rect key="frame" x="0.0" y="140" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PdP-Ot-RcP">
                                         <rect key="frame" x="0.0" y="280" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4u-k4-Ih2">
-                                        <rect key="frame" x="0.0" y="420" width="100" height="42"/>
-                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="42" id="48g-KE-9t2"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="cKZ-dc-jqa"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <color key="tintColor" systemColor="labelColor"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="START">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="startButtonDidTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="IIV-to-cjJ"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="77i-Qu-5ri" firstAttribute="width" secondItem="WFa-R4-EtQ" secondAttribute="width" id="9L1-0A-3MM"/>
-                                    <constraint firstItem="PdP-Ot-RcP" firstAttribute="height" secondItem="77i-Qu-5ri" secondAttribute="height" id="BYX-hb-ida"/>
-                                    <constraint firstItem="77i-Qu-5ri" firstAttribute="height" secondItem="WFa-R4-EtQ" secondAttribute="height" id="XiN-oI-sRz"/>
-                                    <constraint firstItem="PdP-Ot-RcP" firstAttribute="width" secondItem="77i-Qu-5ri" secondAttribute="width" id="rgp-si-1Dt"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="dBI-ZB-yUD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8mB-20-CGv"/>
-                            <constraint firstItem="dBI-ZB-yUD" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="xko-4x-21O"/>
+                            <constraint firstItem="dBI-ZB-yUD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="58" id="Ja9-26-uk9"/>
+                            <constraint firstItem="dBI-ZB-yUD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Vc9-Ch-qNL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Y4u-k4-Ih2" secondAttribute="bottom" constant="58" id="rrO-Ga-mng"/>
+                            <constraint firstItem="Y4u-k4-Ih2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tGK-vf-MbL"/>
+                            <constraint firstItem="dBI-ZB-yUD" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.446009" id="ykO-xR-SXW"/>
                         </constraints>
                     </view>
                     <connections>
