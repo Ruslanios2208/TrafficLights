@@ -8,16 +8,20 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    // MARK: - IB Outlets
     @IBOutlet var redView: UIView!
     @IBOutlet var yellowView: UIView!
     @IBOutlet var greenView: UIView!
     
     @IBOutlet var startButton: UIButton!
     
+    // MARK: - Private Properties
     private var currentLight = CurrentLight.red
     private let lightIsOn: CGFloat = 1
     private let lightIsOff: CGFloat = 0.3
     
+    // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,6 +38,7 @@ class ViewController: UIViewController {
         greenView.layer.cornerRadius = greenView.frame.width / 2
     }
 
+    // MARK: - IB Actions
     @IBAction func startButtonDidTapped() {
         if startButton.currentTitle == "START" {
             startButton.setTitle("NEXT", for: .normal)
